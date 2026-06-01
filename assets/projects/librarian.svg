@@ -1,0 +1,251 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgLib" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D1120"/>
+      <stop offset="1" stop-color="#161E2E"/>
+    </linearGradient>
+    <linearGradient id="shelfWood" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A2620"/>
+      <stop offset="1" stop-color="#1F1410"/>
+    </linearGradient>
+    <linearGradient id="book1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8B5EF8"/><stop offset="1" stop-color="#5D3FA8"/></linearGradient>
+    <linearGradient id="book2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#00E0E9"/><stop offset="1" stop-color="#0090A0"/></linearGradient>
+    <linearGradient id="book3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFB050"/><stop offset="1" stop-color="#C07820"/></linearGradient>
+    <linearGradient id="book4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E04060"/><stop offset="1" stop-color="#902040"/></linearGradient>
+    <linearGradient id="book5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#60D080"/><stop offset="1" stop-color="#308050"/></linearGradient>
+    <linearGradient id="bookGold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFE85A"/><stop offset="1" stop-color="#C99A00"/></linearGradient>
+    <radialGradient id="bookGlow"><stop offset="0" stop-color="#FFD700" stop-opacity=".4"/><stop offset="1" stop-color="#FFD700" stop-opacity="0"/></radialGradient>
+    <radialGradient id="lampGlow" cx=".5" cy="0" r="1"><stop offset="0" stop-color="#FFD700" stop-opacity=".18"/><stop offset="1" stop-color="#FFD700" stop-opacity="0"/></radialGradient>
+  </defs>
+
+  <rect width="400" height="240" fill="url(#bgLib)"/>
+
+  <!-- Warm ambient lamp glow from top right -->
+  <ellipse cx="280" cy="40" rx="180" ry="120" fill="url(#lampGlow)"/>
+
+  <!-- ════ BOOKSHELF (left 2/3 of canvas) ════ -->
+  <g transform="translate(30, 35)">
+    
+    <!-- Outer shelf frame -->
+    <rect x="0" y="0" width="220" height="170" rx="2" fill="url(#shelfWood)" stroke="#5A3A2A" stroke-width="1.5"/>
+    
+    <!-- Shelf inner shadow -->
+    <rect x="6" y="6" width="208" height="158" fill="#0F0905" stroke="#2A1810" stroke-width=".5"/>
+    
+    <!-- Shelf dividers -->
+    <line x1="6" y1="60"  x2="214" y2="60"  stroke="#5A3A2A" stroke-width="3"/>
+    <line x1="6" y1="115" x2="214" y2="115" stroke="#5A3A2A" stroke-width="3"/>
+    
+    <!-- Shelf top reflection -->
+    <line x1="6" y1="61"  x2="214" y2="61" stroke="#7A5A4A" stroke-width=".5"/>
+    <line x1="6" y1="116" x2="214" y2="116" stroke="#7A5A4A" stroke-width=".5"/>
+    <line x1="6" y1="162" x2="214" y2="162" stroke="#7A5A4A" stroke-width=".5"/>
+    
+    <!-- ─── Row 1 books ─── -->
+    <g transform="translate(10, 12)">
+      <rect width="14" height="46" fill="url(#book1)" stroke="#3A2070" stroke-width=".4"/>
+      <rect x="2" y="6"  width="10" height="1" fill="#FFD700" opacity=".5"/>
+      <rect x="2" y="38" width="10" height="1" fill="#FFD700" opacity=".5"/>
+      
+      <rect x="16" width="10" height="46" fill="url(#book2)" stroke="#005060" stroke-width=".4"/>
+      <rect x="18" y="8" width="6" height="1" fill="#FFFFFF" opacity=".4"/>
+      
+      <rect x="28" width="20" height="46" fill="url(#book3)" stroke="#704010" stroke-width=".4"/>
+      <text x="38" y="28" text-anchor="middle" font-family="monospace" font-size="6" fill="#FFFFFF" opacity=".6">CV</text>
+      
+      <rect x="50" width="12" height="46" fill="url(#book4)" stroke="#501020" stroke-width=".4"/>
+      
+      <rect x="64" width="14" height="46" fill="url(#book5)" stroke="#106030" stroke-width=".4"/>
+      <circle cx="71" cy="14" r="2" fill="#FFD700" opacity=".7"/>
+      
+      <rect x="80" width="18" height="46" fill="url(#book2)" stroke="#005060" stroke-width=".4"/>
+      <rect x="83" y="6" width="12" height="1" fill="#FFFFFF" opacity=".4"/>
+      <rect x="83" y="40" width="12" height="1" fill="#FFFFFF" opacity=".4"/>
+      
+      <rect x="100" width="10" height="46" fill="url(#book1)" stroke="#3A2070" stroke-width=".4"/>
+      
+      <rect x="112" width="16" height="46" fill="url(#book4)" stroke="#501020" stroke-width=".4"/>
+      
+      <rect x="130" width="12" height="46" fill="url(#book3)" stroke="#704010" stroke-width=".4"/>
+      
+      <rect x="144" width="14" height="46" fill="url(#book5)" stroke="#106030" stroke-width=".4"/>
+      
+      <rect x="160" width="20" height="46" fill="url(#book1)" stroke="#3A2070" stroke-width=".4"/>
+      <text x="170" y="28" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFD700" opacity=".7">ROS</text>
+      
+      <rect x="182" width="12" height="46" fill="url(#book2)" stroke="#005060" stroke-width=".4"/>
+    </g>
+    
+    <!-- ─── Row 2 books (with TARGET book glowing) ─── -->
+    <g transform="translate(10, 66)">
+      <rect width="12" height="46" fill="url(#book5)" stroke="#106030" stroke-width=".4"/>
+      
+      <rect x="14" width="18" height="46" fill="url(#book1)" stroke="#3A2070" stroke-width=".4"/>
+      
+      <rect x="34" width="10" height="46" fill="url(#book4)" stroke="#501020" stroke-width=".4"/>
+      
+      <!-- Glow behind target book -->
+      <ellipse cx="56" cy="23" rx="20" ry="32" fill="url(#bookGlow)"/>
+      <!-- TARGET BOOK — gold spine -->
+      <rect x="46" width="20" height="46" fill="url(#bookGold)" stroke="#FFD700" stroke-width="1.2"/>
+      <rect x="46" width="20" height="46" fill="none" stroke="#FFFFFF" stroke-width=".3" opacity=".5"/>
+      <rect x="48" y="6"  width="16" height="1.5" fill="#1A0F0A"/>
+      <rect x="48" y="38" width="16" height="1.5" fill="#1A0F0A"/>
+      <text x="56" y="28" text-anchor="middle" font-family="monospace" font-size="5" font-weight="700" fill="#1A0F0A">★</text>
+      
+      <rect x="68" width="14" height="46" fill="url(#book2)" stroke="#005060" stroke-width=".4"/>
+      
+      <rect x="84" width="18" height="46" fill="url(#book3)" stroke="#704010" stroke-width=".4"/>
+      
+      <rect x="104" width="14" height="46" fill="url(#book1)" stroke="#3A2070" stroke-width=".4"/>
+      
+      <rect x="120" width="10" height="46" fill="url(#book5)" stroke="#106030" stroke-width=".4"/>
+      
+      <rect x="132" width="16" height="46" fill="url(#book4)" stroke="#501020" stroke-width=".4"/>
+      
+      <rect x="150" width="12" height="46" fill="url(#book2)" stroke="#005060" stroke-width=".4"/>
+      
+      <rect x="164" width="14" height="46" fill="url(#book1)" stroke="#3A2070" stroke-width=".4"/>
+      
+      <rect x="180" width="14" height="46" fill="url(#book3)" stroke="#704010" stroke-width=".4"/>
+    </g>
+    
+    <!-- ─── Row 3 books ─── -->
+    <g transform="translate(10, 121)">
+      <rect width="16" height="40" fill="url(#book4)" stroke="#501020" stroke-width=".4"/>
+      
+      <rect x="18" width="10" height="40" fill="url(#book2)" stroke="#005060" stroke-width=".4"/>
+      
+      <rect x="30" width="14" height="40" fill="url(#book1)" stroke="#3A2070" stroke-width=".4"/>
+      
+      <rect x="46" width="20" height="40" fill="url(#book5)" stroke="#106030" stroke-width=".4"/>
+      <text x="56" y="24" text-anchor="middle" font-family="monospace" font-size="5" fill="#FFFFFF" opacity=".5">PY</text>
+      
+      <rect x="68" width="12" height="40" fill="url(#book3)" stroke="#704010" stroke-width=".4"/>
+      
+      <rect x="82" width="14" height="40" fill="url(#book2)" stroke="#005060" stroke-width=".4"/>
+      
+      <rect x="98" width="10" height="40" fill="url(#book1)" stroke="#3A2070" stroke-width=".4"/>
+      
+      <rect x="110" width="18" height="40" fill="url(#book4)" stroke="#501020" stroke-width=".4"/>
+      
+      <rect x="130" width="12" height="40" fill="url(#book5)" stroke="#106030" stroke-width=".4"/>
+      
+      <rect x="144" width="14" height="40" fill="url(#book3)" stroke="#704010" stroke-width=".4"/>
+      
+      <rect x="160" width="16" height="40" fill="url(#book1)" stroke="#3A2070" stroke-width=".4"/>
+      
+      <rect x="178" width="10" height="40" fill="url(#book2)" stroke="#005060" stroke-width=".4"/>
+      
+      <rect x="190" width="14" height="40" fill="url(#book4)" stroke="#501020" stroke-width=".4"/>
+    </g>
+    
+  </g>
+
+  <!-- ════ ROBOT (right side, looking at shelf) ════ -->
+  <g transform="translate(320, 145)">
+    <!-- Shadow under robot -->
+    <ellipse cx="0" cy="58" rx="28" ry="3" fill="#000" opacity=".4"/>
+    
+    <!-- body -->
+    <rect x="-22" y="-15" width="44" height="55" rx="5" fill="#2A2042" stroke="#7B5EF8" stroke-width="1.2"/>
+    <!-- body highlight -->
+    <rect x="-22" y="-15" width="44" height="6" rx="5" fill="#7B5EF8" opacity=".25"/>
+    
+    <!-- head (rounded) -->
+    <ellipse cx="0" cy="-26" rx="20" ry="16" fill="#2A2042" stroke="#7B5EF8" stroke-width="1.2"/>
+    <ellipse cx="0" cy="-30" rx="18" ry="10" fill="#9D85FF" opacity=".15"/>
+    
+    <!-- camera eye -->
+    <circle cx="0" cy="-25" r="9" fill="#0D1120" stroke="#00D4DD" stroke-width="1.2"/>
+    <circle cx="0" cy="-25" r="6" fill="#1A1535"/>
+    <circle cx="0" cy="-25" r="3.5" fill="#00D4DD"/>
+    <circle cx="-1" cy="-26" r="1.5" fill="#FFFFFF"/>
+    
+    <!-- antenna -->
+    <line x1="0" y1="-42" x2="0" y2="-50" stroke="#9D85FF" stroke-width="1"/>
+    <circle cx="0" cy="-52" r="2" fill="#00D4DD">
+      <animate attributeName="r" values="2;3;2" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    
+    <!-- side LEDs on body -->
+    <circle cx="-15" cy="-5" r="1.5" fill="#00D4DD"/>
+    <circle cx="15"  cy="-5" r="1.5" fill="#00D4DD"/>
+    
+    <!-- chest screen -->
+    <rect x="-14" y="2" width="28" height="14" rx="2" fill="#0D1120" stroke="#7B5EF8" stroke-width=".5"/>
+    <g font-family="monospace" font-size="4" fill="#00D4DD">
+      <text x="-11" y="8">BOOK:</text>
+      <text x="-11" y="14" fill="#FFD700">FOUND ✓</text>
+    </g>
+    
+    <!-- arm reaching toward shelf -->
+    <g transform="translate(-22, 8)">
+      <rect x="-2" y="-3" width="6" height="14" rx="2" fill="#2A2042" stroke="#7B5EF8" stroke-width=".8"/>
+      <!-- forearm extending -->
+      <rect x="-22" y="-2" width="24" height="6" rx="3" fill="#2A2042" stroke="#7B5EF8" stroke-width=".8"/>
+      <!-- gripper -->
+      <g transform="translate(-22, 1)">
+        <path d="M0 -3 L-4 -5 L-4 -2 L0 0 Z" fill="#9D85FF"/>
+        <path d="M0 4 L-4 6 L-4 3 L0 1 Z" fill="#9D85FF"/>
+      </g>
+    </g>
+    
+    <!-- wheels -->
+    <ellipse cx="-14" cy="48" rx="8" ry="6" fill="#1A0F0A" stroke="#9D85FF" stroke-width="1"/>
+    <circle cx="-14" cy="48" r="2.5" fill="#9D85FF"/>
+    <ellipse cx="14" cy="48" rx="8" ry="6" fill="#1A0F0A" stroke="#9D85FF" stroke-width="1"/>
+    <circle cx="14" cy="48" r="2.5" fill="#9D85FF"/>
+  </g>
+
+  <!-- ════ Scanner beam from robot eye to target book ════ -->
+  <g>
+    <!-- main beam -->
+    <line x1="320" y1="120" x2="86" y2="100" stroke="#FFD700" stroke-width="1.2" stroke-dasharray="4 2" opacity=".85"/>
+    <!-- beam endpoints -->
+    <circle cx="320" cy="120" r="2" fill="#FFD700"/>
+    <!-- scan crosshair on book -->
+    <g transform="translate(86, 100)" stroke="#FFD700" stroke-width="1.2" fill="none">
+      <circle r="6"/>
+      <line x1="-9" y1="0" x2="-7" y2="0"/>
+      <line x1="7"  y1="0" x2="9" y2="0"/>
+      <line x1="0" y1="-9" x2="0" y2="-7"/>
+      <line x1="0" y1="7"  x2="0" y2="9"/>
+    </g>
+  </g>
+
+  <!-- barcode label floating above target -->
+  <g transform="translate(86, 50)">
+    <rect x="-22" y="-12" width="44" height="22" rx="3" fill="#0D1120" stroke="#FFD700" stroke-width=".8"/>
+    <g fill="#FFD700" stroke="none">
+      <rect x="-18" y="-9" width="1.2" height="12"/>
+      <rect x="-16" y="-9" width="2" height="12"/>
+      <rect x="-13" y="-9" width="1" height="12"/>
+      <rect x="-11" y="-9" width="2.5" height="12"/>
+      <rect x="-7" y="-9" width="1.2" height="12"/>
+      <rect x="-5" y="-9" width="1.8" height="12"/>
+      <rect x="-2" y="-9" width="1" height="12"/>
+      <rect x="0" y="-9" width="2.2" height="12"/>
+      <rect x="3" y="-9" width="1.5" height="12"/>
+      <rect x="6" y="-9" width="1" height="12"/>
+      <rect x="8" y="-9" width="2.5" height="12"/>
+      <rect x="12" y="-9" width="1.2" height="12"/>
+      <rect x="15" y="-9" width="2" height="12"/>
+      <rect x="18" y="-9" width="1" height="12"/>
+    </g>
+    <text x="0" y="5" text-anchor="middle" font-family="monospace" font-size="4" font-weight="700" fill="#1A1228">9 781234 567890</text>
+  </g>
+  <!-- connector line from barcode to target -->
+  <line x1="86" y1="62" x2="86" y2="94" stroke="#FFD700" stroke-width=".5" stroke-dasharray="2 2" opacity=".6"/>
+
+  <!-- ════ HUD chip ════ -->
+  <g transform="translate(20, 18)">
+    <rect width="148" height="22" rx="11" fill="#0D1120" stroke="#7B5EF8" stroke-width=".8" opacity=".9"/>
+    <circle cx="14" cy="11" r="3" fill="#FFD700">
+      <animate attributeName="opacity" values="1;.3;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <text x="26" y="15" font-family="monospace" font-size="9" font-weight="700" fill="#9D85FF" letter-spacing="1.5">LIBRARIAN · ROS</text>
+  </g>
+  
+  <text x="200" y="232" text-anchor="middle" font-family="monospace" font-size="7" fill="#7080A8" letter-spacing="2">BARCODE LOCATED · TARGET ACQUIRED</text>
+</svg>

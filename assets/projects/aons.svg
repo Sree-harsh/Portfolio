@@ -1,0 +1,57 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D1120"/>
+      <stop offset="1" stop-color="#161E2E"/>
+    </linearGradient>
+    <linearGradient id="cone1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7B5EF8" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#00D4DD" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow1">
+      <stop offset="0" stop-color="#FFD700" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="240" fill="url(#bg1)"/>
+  <!-- grid -->
+  <g stroke="#1E2640" stroke-width=".5">
+    <path d="M0 60 L400 60 M0 120 L400 120 M0 180 L400 180"/>
+    <path d="M80 0 L80 240 M160 0 L160 240 M240 0 L240 240 M320 0 L320 240"/>
+  </g>
+  <!-- horizon ground -->
+  <path d="M0 170 Q100 155 200 165 T400 160 L400 240 L0 240 Z" fill="#111828" opacity=".8"/>
+  <path d="M0 180 Q120 168 200 175 T400 172" stroke="#7B5EF8" stroke-width="1" fill="none" opacity=".4"/>
+  <!-- waypoints -->
+  <circle cx="60" cy="200" r="4" fill="#00D4DD"/>
+  <circle cx="140" cy="195" r="4" fill="#00D4DD"/>
+  <circle cx="220" cy="200" r="4" fill="#00D4DD"/>
+  <circle cx="300" cy="190" r="4" fill="#00D4DD"/>
+  <circle cx="360" cy="185" r="6" fill="#FFD700"/>
+  <circle cx="360" cy="185" r="14" fill="url(#glow1)"/>
+  <!-- path -->
+  <path d="M60 200 L140 195 L220 200 L300 190 L360 185" stroke="#00D4DD" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+  <!-- robot -->
+  <g transform="translate(60, 200)">
+    <rect x="-10" y="-14" width="20" height="14" rx="2" fill="#7B5EF8"/>
+    <rect x="-12" y="-4" width="4" height="6" fill="#1E2640"/>
+    <rect x="8" y="-4" width="4" height="6" fill="#1E2640"/>
+    <circle cx="0" cy="-10" r="2" fill="#00D4DD"/>
+  </g>
+  <!-- sensor cone -->
+  <path d="M60 195 L160 130 L260 195 Z" fill="url(#cone1)" opacity=".6"/>
+  <!-- detection markers -->
+  <circle cx="150" cy="150" r="3" fill="#FFD700" opacity=".8"/>
+  <rect x="200" y="155" width="6" height="6" fill="#FFD700" opacity=".6"/>
+  <!-- compass top right -->
+  <g transform="translate(360, 40)">
+    <circle r="18" fill="none" stroke="#7B5EF8" stroke-width="1" opacity=".5"/>
+    <path d="M0 -14 L3 0 L0 4 L-3 0 Z" fill="#00D4DD"/>
+    <text x="0" y="-22" text-anchor="middle" font-family="monospace" font-size="7" fill="#7080A8">N</text>
+  </g>
+  <!-- title chip -->
+  <g transform="translate(20, 30)">
+    <rect width="80" height="20" rx="10" fill="#1A1535" stroke="#7B5EF8" stroke-width=".5"/>
+    <text x="40" y="14" text-anchor="middle" font-family="monospace" font-size="9" fill="#9D85FF" letter-spacing="1">AONS · v2</text>
+  </g>
+</svg>

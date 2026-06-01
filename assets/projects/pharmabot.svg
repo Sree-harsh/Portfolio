@@ -1,0 +1,117 @@
+<svg viewBox="0 0 400 240" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgPharma" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0D1120"/>
+      <stop offset="1" stop-color="#161E2E"/>
+    </linearGradient>
+    <radialGradient id="moodGlow" cx=".15" cy=".5" r=".5">
+      <stop offset="0" stop-color="#FFD700" stop-opacity=".15"/>
+      <stop offset="1" stop-color="#FFD700" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="moodGlow2" cx=".85" cy=".5" r=".5">
+      <stop offset="0" stop-color="#00D4DD" stop-opacity=".1"/>
+      <stop offset="1" stop-color="#00D4DD" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="corrugated" x="0" y="0" width="6" height="3" patternUnits="userSpaceOnUse">
+      <path d="M0 1.5 Q1.5 0 3 1.5 T6 1.5" stroke="#7B5EF8" stroke-width=".4" fill="none" opacity=".6"/>
+    </pattern>
+  </defs>
+  
+  <rect width="400" height="240" fill="url(#bgPharma)"/>
+  <rect width="400" height="240" fill="url(#moodGlow)"/>
+  <rect width="400" height="240" fill="url(#moodGlow2)"/>
+  
+  <!-- floor -->
+  <line x1="20" y1="200" x2="380" y2="200" stroke="#1E2640" stroke-width="1"/>
+  <line x1="20" y1="205" x2="380" y2="205" stroke="#1E2640" stroke-width=".5" opacity=".5"/>
+  
+  <!-- Raspberry Pi base board -->
+  <rect x="150" y="170" width="130" height="22" rx="2" fill="#0D5C2E" stroke="#00D4DD" stroke-width=".8" opacity=".9"/>
+  <!-- GPIO pins (yellow header) -->
+  <rect x="158" y="167" width="80" height="6" fill="#FFD700" opacity=".9"/>
+  <g fill="#1A1535">
+    <rect x="160" y="168" width="1.5" height="4"/>
+    <rect x="166" y="168" width="1.5" height="4"/>
+    <rect x="172" y="168" width="1.5" height="4"/>
+    <rect x="178" y="168" width="1.5" height="4"/>
+    <rect x="184" y="168" width="1.5" height="4"/>
+    <rect x="190" y="168" width="1.5" height="4"/>
+    <rect x="196" y="168" width="1.5" height="4"/>
+    <rect x="202" y="168" width="1.5" height="4"/>
+    <rect x="208" y="168" width="1.5" height="4"/>
+    <rect x="214" y="168" width="1.5" height="4"/>
+    <rect x="220" y="168" width="1.5" height="4"/>
+    <rect x="226" y="168" width="1.5" height="4"/>
+    <rect x="232" y="168" width="1.5" height="4"/>
+  </g>
+  <!-- Pi components -->
+  <rect x="245" y="175" width="20" height="14" rx="1" fill="#1A1535" stroke="#7B5EF8" stroke-width=".5"/>
+  <rect x="158" y="180" width="12" height="9" rx="1" fill="#1A1535"/>
+  
+  <!-- cardboard tower (corrugated) -->
+  <path d="M210 170 L210 90 L260 80 L260 165 Z" fill="#2A2042" stroke="#7B5EF8" stroke-width="1"/>
+  <path d="M210 170 L210 90 L260 80 L260 165 Z" fill="url(#corrugated)"/>
+  <!-- right side cardboard edge highlight -->
+  <line x1="260" y1="80" x2="260" y2="165" stroke="#9D85FF" stroke-width=".8"/>
+  
+  <!-- top platform with camera -->
+  <path d="M180 75 L290 60 L295 70 L185 85 Z" fill="#2A2042" stroke="#7B5EF8" stroke-width="1"/>
+  <path d="M180 75 L290 60" stroke="#9D85FF" stroke-width=".6" opacity=".7"/>
+  
+  <!-- label sticker on tower -->
+  <rect x="218" y="100" width="32" height="22" fill="#F5EFE6" stroke="#1A1535" stroke-width=".5" transform="rotate(-3 234 111)"/>
+  <text x="234" y="115" text-anchor="middle" font-family="monospace" font-size="8" fill="#FFD700" font-weight="bold" transform="rotate(-3 234 111)">AD-19</text>
+  
+  <!-- camera at top right -->
+  <g transform="translate(290, 62)">
+    <circle r="9" fill="#0D1120" stroke="#00D4DD" stroke-width="1.2"/>
+    <circle r="6" fill="#1A1535" stroke="#7B5EF8" stroke-width=".5"/>
+    <circle r="3" fill="#00D4DD"/>
+    <circle r="1.5" fill="#FFD700"/>
+  </g>
+  
+  <!-- ribbon cable swooping from camera to base -->
+  <path d="M285 70 Q310 130 290 170 Q260 200 200 195" stroke="#E4E8F8" stroke-width="5" fill="none" opacity=".7"/>
+  <path d="M285 70 Q310 130 290 170 Q260 200 200 195" stroke="#9D85FF" stroke-width="5" stroke-dasharray=".5 4" fill="none" opacity=".4"/>
+  
+  <!-- support struts -->
+  <line x1="155" y1="190" x2="215" y2="100" stroke="#9D85FF" stroke-width="1.2" opacity=".7"/>
+  <line x1="160" y1="195" x2="220" y2="110" stroke="#9D85FF" stroke-width="1" opacity=".5"/>
+  
+  <!-- big orange wheel (left) -->
+  <g transform="translate(140, 188)">
+    <circle r="32" fill="#1A0F0A" stroke="#FFA500" stroke-width="1.5"/>
+    <circle r="28" fill="none" stroke="#FFA500" stroke-width="1" opacity=".5"/>
+    <!-- 5-spoke star wheel -->
+    <g fill="#FFA500" opacity=".95">
+      <g transform="rotate(0)">
+        <path d="M0 0 L-3 -22 L0 -26 L3 -22 Z"/>
+      </g>
+      <g transform="rotate(72)">
+        <path d="M0 0 L-3 -22 L0 -26 L3 -22 Z"/>
+      </g>
+      <g transform="rotate(144)">
+        <path d="M0 0 L-3 -22 L0 -26 L3 -22 Z"/>
+      </g>
+      <g transform="rotate(216)">
+        <path d="M0 0 L-3 -22 L0 -26 L3 -22 Z"/>
+      </g>
+      <g transform="rotate(288)">
+        <path d="M0 0 L-3 -22 L0 -26 L3 -22 Z"/>
+      </g>
+    </g>
+    <circle r="9" fill="#FFA500"/>
+    <circle r="4" fill="#1A0F0A"/>
+  </g>
+  
+  <!-- small back wheel/caster -->
+  <circle cx="270" cy="200" r="8" fill="#1A0F0A" stroke="#9D85FF" stroke-width="1"/>
+  <circle cx="270" cy="200" r="3" fill="#9D85FF"/>
+  
+  <!-- HUD label -->
+  <g transform="translate(20, 25)">
+    <rect width="120" height="22" rx="11" fill="#0D1120" stroke="#7B5EF8" stroke-width=".8" opacity=".9"/>
+    <circle cx="14" cy="11" r="3" fill="#FFD700"/>
+    <text x="26" y="15" font-family="monospace" font-size="9" fill="#FFD700" letter-spacing="1.5">PHARMABOT · v3</text>
+  </g>
+</svg>

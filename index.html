@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sree Harsh · Robotics Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaqueries.css">
+</head>
+<body>
+
+  <!-- Desktop Nav -->
+  <nav id="desktop-nav">
+    <div class="logo">Sree Harsh</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#beyond">Beyond</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <nav id="hamburger-nav">
+    <div class="logo">Sree Harsh</div>
+    <div class="nav-right">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about"        onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience"   onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills"       onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects"     onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#achievements" onclick="toggleMenu()">Achievements</a></li>
+          <li><a href="#beyond"       onclick="toggleMenu()">Beyond</a></li>
+          <li><a href="#contact"      onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ══ -->
+  <section id="profile">
+    <div class="profile-pic-wrap">
+      <img src="./assets/profile-white.png" alt="Sree Harsh" class="profile-pic">
+    </div>
+    <div class="hero-text">
+      <p class="eyebrow">Hi, I'm</p>
+      <h1 class="hero-name">Kowdodi Phanendra<br>Sree Harsh</h1>
+      <p class="hero-role">Software Engineer by Day · Roboticist at Heart</p>
+      <p class="hero-tagline">Building intelligent machines that perceive, plan, and act — from lab prototypes to real-world deployments.</p>
+      <div class="btn-container">
+        <button class="btn btn-primary" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+        <button class="btn btn-outline" onclick="location.href='#contact'">Get in Touch</button>
+      </div>
+      <div id="socials-container">
+        <a href="https://github.com/Sree-harsh" target="_blank" aria-label="GitHub">
+          <img src="./assets/github.png" alt="GitHub" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/PhanendraSreeharsh" target="_blank" aria-label="LinkedIn">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ══ -->
+  <section id="about">
+    <span class="section-label">Get to know me</span>
+    <h2 class="section-title">About Me</h2>
+    <div class="about-grid-v2">
+      <div class="about-img-banner">
+        <img src="./assets/medals.jpeg" alt="Medals & Achievements" class="about-img-landscape">
+      </div>
+      <div class="about-content-v2">
+        <div class="about-cards">
+          <div class="about-card">
+            <div class="about-card-icon">🎓</div>
+            <h3>Education</h3>
+            <p>B.Tech, Mechanical Engg.<br>NIT Rourkela · 8.02 CGPA</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">⚙️</div>
+            <h3>Current Role</h3>
+            <p>Adv. App. Engineering Analyst<br>Accenture</p>
+          </div>
+          <div class="about-card">
+            <div class="about-card-icon">📍</div>
+            <h3>Location</h3>
+            <p>India</p>
+          </div>
+        </div>
+        <p class="about-bio">
+          I'm a robotics engineer with a passion for building autonomous systems that work in the real world.
+          From designing underwater robots at NIT Rourkela's research lab, to developing outdoor navigation stacks
+          at IIT Bombay's eYantra lab — I've always been driven by building things that move and think.
+          Currently at Accenture, I'm channelling that into AI-powered workflow automation and DevOps.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══ -->
+  <section id="experience">
+    <span class="section-label">Where I've worked</span>
+    <h2 class="section-title">Work Experience</h2>
+    <div class="exp-list">
+
+      <div class="exp-card exp-card--current">
+        <div class="exp-stripe exp-stripe--current"></div>
+        <div class="exp-body">          <div class="exp-header">
+          <div class="exp-meta">
+            <h3 class="exp-role">Advanced Application Engineer Analyst</h3>
+            <p class="exp-org">Accenture Solutions Private Limited</p>
+            <p class="exp-loc"><span class="loc-icon">📍</span> Pune, India</p>
+          </div>
+          <div class="exp-header-right">
+            <span class="exp-date exp-date--current"><span class="live-dot"></span>Present</span>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Part of the Tools Delivery team, designing and developing AI-powered agents to automate delivery workflows.</li>
+          <li>Completed training in Infrastructure Engineering and DevOps — hands-on with Java, Python, AWS, Docker, Kubernetes, and Terraform.</li>
+        </ul></div>
+      </div><div class="exp-card">
+        <div class="exp-stripe"></div>
+        <div class="exp-body">          <div class="exp-header">
+          <div class="exp-meta">
+            <h3 class="exp-role">Associate Researcher</h3>
+            <p class="exp-org">Real and Simulation Robot Research Lab, NIT Rourkela · under Prof. Dayal R Parhi</p>
+            <p class="exp-loc"><span class="loc-icon">📍</span> NIT Rourkela, Odisha</p>
+          </div>
+          <div class="exp-header-right">
+            <span class="exp-date">Jul 2024 – May 2025</span>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Contributed to multiple underwater robot design projects — electronics, sensor integration, and mechanical assembly.</li>
+          <li>Developed a low-computation obstacle avoidance algorithm for mobile robots on Arduino + Raspberry Pi.</li>
+          <li>Led a multidisciplinary team to prototype and test control systems for real-time navigation in uncertain environments.</li>
+        </ul></div>
+      </div><div class="exp-card">
+        <div class="exp-stripe"></div>
+        <div class="exp-body"><div class="exp-header">
+          <div class="exp-meta">
+            <h3 class="exp-role">Mechatronics Intern</h3>
+            <p class="exp-org">Easy Lokal</p>
+            <p class="exp-loc"><span class="loc-icon">📍</span> Remote</p>
+          </div>
+          <div class="exp-header-right">
+            <span class="exp-date">May 2024 – Jul 2024</span>
+            <a href="https://drive.google.com/file/d/1M3AZNFtUL_credential_easylokal" target="_blank" class="cred-link">Certificate ↗</a>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Engineered a functional cooking robot from the ground up — <span class="num">3D</span> CAD model with focus on modularity and aesthetics.</li>
+          <li>Designed complete electronic circuitry integrating sensors, actuators, and a top-mounted camera for real-time process control.</li>
+        </ul></div>
+      </div><div class="exp-card">
+        <div class="exp-stripe"></div>
+        <div class="exp-body"><div class="exp-header">
+          <div class="exp-meta">
+            <h3 class="exp-role">Summer Intern — Embedded Systems &amp; Robotics</h3>
+            <p class="exp-org">eYantra Lab, IIT Bombay</p>
+            <p class="exp-loc"><span class="loc-icon">📍</span> CSE Dept, IIT Bombay</p>
+          </div>
+          <div class="exp-header-right">
+            <span class="exp-date">May 2023 – Jul 2023</span>
+            <a href="https://drive.google.com/file/d/1M3AZNFtUL_credential_eyantra" target="_blank" class="cred-link">Certificate ↗</a>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Developed an Autonomous Outdoor Navigation Stack (AONS) using the Jetson AGX Xavier for high-performance real-time computation.</li>
+          <li>Integrated perception and planning algorithms for <span class="num">3D</span> depth, object detection, and mapping in unstructured outdoor terrains.</li>
+        </ul></div>
+      </div><div class="exp-card">
+        <div class="exp-stripe"></div>
+        <div class="exp-body">          <div class="exp-header">
+          <div class="exp-meta">
+            <h3 class="exp-role">Robotics Trainer</h3>
+            <p class="exp-org">World Robot Olympiad (WRO)</p>
+            <p class="exp-loc"><span class="loc-icon">📍</span> Anand, Gujarat</p>
+          </div>
+          <div class="exp-header-right">
+            <span class="exp-date">2018 – 2020</span>
+          </div>
+        </div>
+        <ul class="exp-bullets">
+          <li>Mentored secondary school students in robotics, programming, and problem-solving for WRO.</li>
+          <li>Trained two teams that advanced to Nationals in consecutive years.</li>
+        </ul></div>
+      </div></div>
+  </section>
+
+  <!-- ══ SKILLS ══ -->
+  <section id="skills">
+    <span class="section-label">What I work with</span>
+    <h2 class="section-title">Skills &amp; Expertise</h2>
+    <div class="skills-grid">
+
+      <div class="skill-group">
+        <h3 class="skill-group-title">Robotics &amp; Autonomy</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>ROS1 / ROS2</strong><span class="skill-level lvl-adv">Advanced</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Autonomous Navigation</strong><span class="skill-level lvl-adv">Advanced</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Control Systems</strong><span class="skill-level lvl-pro">Proficient</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Sensor Integration</strong><span class="skill-level lvl-pro">Proficient</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Path Planning</strong><span class="skill-level lvl-pro">Proficient</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>SolidWorks / CAD</strong><span class="skill-level lvl-pro">Proficient</span></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title">Perception &amp; AI</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Computer Vision</strong><span class="skill-level lvl-adv">Advanced</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>OpenCV / MediaPipe</strong><span class="skill-level lvl-adv">Advanced</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>YOLO Object Detection</strong><span class="skill-level lvl-pro">Proficient</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Neural Networks</strong><span class="skill-level lvl-int">Intermediate</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>3D Depth &amp; Mapping</strong><span class="skill-level lvl-pro">Proficient</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Gazebo / WeBots / Vrep</strong><span class="skill-level lvl-pro">Proficient</span></div></div>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <h3 class="skill-group-title">Programming &amp; Tools</h3>
+        <div class="skill-list">
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Python / C / C++</strong><span class="skill-level lvl-adv">Advanced</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Linux / Bash</strong><span class="skill-level lvl-pro">Proficient</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Docker / Kubernetes</strong><span class="skill-level lvl-int">Intermediate</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>AWS / Terraform</strong><span class="skill-level lvl-int">Intermediate</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Git &amp; GitHub</strong><span class="skill-level lvl-adv">Advanced</span></div></div>
+          <div class="skill-item"><span class="skill-dot"></span><div><strong>Arduino / RPi / ESP32 / Jetson</strong><span class="skill-level lvl-adv">Advanced</span></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ══ -->
+  <section id="projects">
+    <span class="section-label">What I've built</span>
+    <h2 class="section-title">Featured Projects</h2>
+    <div class="projects-grid">
+
+<div class="project-card project-card--flagship-gold">
+        <img src="./assets/projects/aons.svg" alt="AONS" class="project-img">
+        <div class="project-info"><div class="flagship-badge">★ Flagship Project</div>
+          <div class="project-tags"><span class="tag">Jetson AGX</span><span class="tag">ROS</span><span class="tag">3D Depth</span></div>
+          <h3 class="project-title">Autonomous Outdoor Navigation Stack</h3>
+          <p class="project-desc">Full outdoor navigation pipeline on Jetson AGX Xavier — 3D depth perception, object detection, mapping, and path planning for reliable autonomous mobility in complex unstructured terrains.</p>
+          <div class="project-links">
+            <button class="btn btn-outline-sm" onclick="location.href='https://github.com/Sree-harsh'">GitHub</button>
+          </div>
+        </div>
+      </div>
+
+<div class="project-card project-card--flagship">
+        <img src="./assets/projects/pharmabot.svg" alt="PharmaBot" class="project-img">
+        <div class="project-info"><div class="flagship-badge">★ Flagship Project</div>
+          <div class="project-tags"><span class="tag">RaspberryPi</span><span class="tag">OpenCV</span><span class="tag">Dijkstra</span></div>
+          <h3 class="project-title">PharmaBot — Medicine Delivery Robot</h3>
+          <p class="project-desc">Autonomous robot with real-time line-following via image processing and global positioning via ceiling camera. Dijkstra's algorithm with custom weights for shortest delivery path planning.</p>
+          <div class="project-links">
+            <button class="btn btn-outline-sm" onclick="location.href='https://github.com/Sree-harsh'">GitHub</button>
+          </div>
+        </div>
+      </div>
+
+<div class="project-card project-card--flagship">
+        <img src="./assets/projects/pixify.svg" alt="Pixify" class="project-img">
+        <div class="project-info"><div class="flagship-badge">★ Flagship Project</div>
+          <div class="project-tags"><span class="tag">Python</span><span class="tag">OpenCV</span></div>
+          <h3 class="project-title">Pixify — The OpenCV Game</h3>
+          <p class="project-desc">An innovative image-decoding challenge to teach Python and OpenCV fundamentals through hands-on problem-solving. Includes a fully automated .exe-based evaluator for instant code feedback.</p>
+          <div class="project-links">
+            <button class="btn btn-outline-sm" onclick="location.href='https://github.com/Sree-harsh'">GitHub</button>
+          </div>
+        </div>
+      </div>
+
+<div class="project-card">
+        <img src="./assets/projects/mechanotesla.svg" alt="MechanoTesla" class="project-img">
+        <div class="project-info">
+          <div class="project-tags"><span class="tag">ESP32</span><span class="tag">WebSockets</span><span class="tag">SolidWorks</span></div>
+          <h3 class="project-title">MechanoTesla — The Desi Cybertruck</h3>
+          <p class="project-desc">3D-printed Cybertruck-inspired robot with 4-mecanum wheels for omnidirectional movement. ESP32 for real-time motor control and a browser-based HTML/WebSocket remote interface.</p>
+          <div class="project-links">
+            <button class="btn btn-outline-sm" onclick="location.href='https://github.com/Sree-harsh'">GitHub</button>
+            <button class="btn btn-outline-sm" onclick="location.href='https://github.com/Sree-harsh'">Video</button>
+          </div>
+        </div>
+      </div>
+
+<div class="project-card">
+        <img src="./assets/projects/librarian.svg" alt="Librarian Bot" class="project-img">
+        <div class="project-info">
+          <div class="project-tags"><span class="tag">ROS1</span><span class="tag">Gazebo</span><span class="tag">OpenCV</span></div>
+          <h3 class="project-title">Librarian Bot</h3>
+          <p class="project-desc">Autonomous navigation system to locate and access designated bookshelves without manual control. Computer vision pipeline to detect barcodes and retrieve corresponding book data.</p>
+          <div class="project-links">
+            <button class="btn btn-outline-sm" onclick="location.href='https://github.com/Sree-harsh'">Video Demo</button>
+          </div>
+        </div>
+      </div>
+
+<div class="project-card">
+        <img src="./assets/projects/conveyor.svg" alt="Conveyor Sway Detector" class="project-img">
+        <div class="project-info">
+          <div class="project-tags"><span class="tag">YOLO</span><span class="tag">OpenCV</span><span class="tag">Python</span></div>
+          <h3 class="project-title">Conveyor Sway Detector</h3>
+          <p class="project-desc">Real-time conveyor belt misalignment detection using an overhead camera and YOLO. Custom dataset annotated from a live steel plant — enables early anomaly detection to prevent equipment failure.</p>
+          <div class="project-links">
+            <button class="btn btn-outline-sm" onclick="location.href='https://github.com/Sree-harsh'">GitHub</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ ACHIEVEMENTS ══ -->
+  <section id="achievements">
+    <span class="section-label">Milestones</span>
+    <h2 class="section-title">Achievements</h2>
+    <div class="timeline">
+
+      <div class="timeline-item timeline-item--gold">
+        <div class="timeline-marker timeline-marker--gold"></div>
+        <div class="timeline-content timeline-content--gold">
+          <span class="timeline-year">Mar 2025</span>
+          <div class="tl-title-row"><h3>Special Recognition — ICORT 2025, DRDO ITR Chandipur</h3><a href="https://drive.google.com/file/d/1M3AZNFtUL_credential_icort" target="_blank" class="cred-link cred-link--gold">Credential ↗</a></div>
+          <p>Co-designed an innovative prototype to simulate sandstorm conditions for testing deep learning-based image restoration models. Represented NIT Rourkela at the <span class="num">4th</span> IEEE International Conference on Range Technology.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item--gold">
+        <div class="timeline-marker timeline-marker--gold"></div>
+        <div class="timeline-content timeline-content--gold">
+          <span class="timeline-year">Apr 2023</span>
+          <div class="tl-title-row"><h3>2nd Runner-Up — eYantra Robotics Challenge, IIT Bombay</h3><a href="https://drive.google.com/file/d/1M3AZNFtUL_credential_eyrc" target="_blank" class="cred-link cred-link--gold">Certificate ↗</a></div>
+          <p>Ranked <span class="num">3rd</span> among <span class="num">374</span> teams for innovation and efficiency in autonomous medicine delivery using QR code detection, line following, and vision-based navigation.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item--highlight">
+        <div class="timeline-marker timeline-marker--highlight"></div>
+        <div class="timeline-content timeline-content--highlight">
+          <span class="timeline-year">Jan 2023</span>
+          <div class="tl-title-row"><h3>2nd Runner-Up — Voyager, IIT Kharagpur</h3><a href="https://drive.google.com/file/d/1M3AZNFtUL_credential_voyager" target="_blank" class="cred-link">Certificate ↗</a></div>
+          <p>Ranked <span class="num">3rd</span> among the top <span class="num">45</span> teams in a national-level robotics competition. Built a colour-sensing line follower robot for autonomous navigation on coloured paths.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item--gold">
+        <div class="timeline-marker timeline-marker--gold"></div>
+        <div class="timeline-content timeline-content--gold">
+          <div class="gold-banner">🥇 1st Place · 53 Countries · SUNY, New York, USA</div>
+          <span class="timeline-year">Jun 2017</span>
+          <div class="tl-title-row"><h3>Grand Gold Medalist — Genius Olympiad, Robotics Category</h3><a href="https://drive.google.com/file/d/1M3AZNFtUL_credential_genius" target="_blank" class="cred-link cred-link--gold">Certificate ↗</a></div>
+          <p>Secured <span class="num">1st</span> place among <span class="num">53</span> participating countries in the Robotics category at the State University of New York, USA. Built a colour-based waste segregation robot with a precision conveyor system and efficient real-time sorting actuation. Received government recognition for the achievement.</p>
+          <div class="gold-chips">
+            <span class="gold-chip">🎖 Govt. Recognised</span>
+            <span class="gold-chip">🌍 International</span>
+            <span class="gold-chip">🤖 Robotics</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item--highlight">
+        <div class="timeline-marker timeline-marker--highlight"></div>
+        <div class="timeline-content timeline-content--highlight">
+          <span class="timeline-year">Jan 2017</span>
+          <div class="tl-title-row"><h3>Best Core Values Award — FIRST LEGO League</h3><a href="https://drive.google.com/file/d/1M3AZNFtUL_credential_fll" target="_blank" class="cred-link">Certificate ↗</a></div>
+          <p>Awarded for innovation and professionalism. Designed and programmed a LEGO robot for the "Animal Allies" challenge — showcased teamwork and problem-solving under timed competition constraints.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item timeline-item--highlight">
+        <div class="timeline-marker timeline-marker--highlight"></div>
+        <div class="timeline-content timeline-content--highlight">
+          <span class="timeline-year">Oct 2016</span>
+          <div class="tl-title-row"><h3>National Finalist — World Robot Olympiad 2016</h3></div>
+          <p>Built a robot to identify, classify, and sort waste blocks by size and colour using sensors and control logic. Advanced to national finals for innovative automation in environmental problem-solving.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══ BEYOND WORK ══ -->
+  <section id="beyond">
+    <span class="section-label">Beyond the screen</span>
+    <h2 class="section-title">Things I Geek Out On</h2>
+    <ul class="hobby-list">
+      <li><span class="hobby-bullet">▸</span> Can solve <span class="num">8</span> different types of Rubik's cubes — 3×3, Megaminx, Pyraminx and more</li>
+      <li><span class="hobby-bullet">▸</span> Green belt in <span class="num">Taekwondo</span></li>
+      <li><span class="hobby-bullet">▸</span> More to be added soon</li>
+    </ul>
+  </section>
+
+  <!-- ══ CONTACT ══ -->
+  <section id="contact">
+    <span class="section-label">Let's connect</span>
+    <h2 class="section-title">Contact Me</h2>
+    <div class="contact-wrapper">
+      <p class="contact-note">Whether it's a research collaboration, an opportunity, or just a chat about robots — I'd love to hear from you.</p>
+      <div class="contact-cards">
+        <a href="mailto:sree16062003@gmail.com" class="contact-card">
+          <img src="./assets/email.png" alt="Email" class="contact-icon">
+          <div>
+            <p class="contact-type">Email</p>
+            <p class="contact-value">sree16062003@gmail.com</p>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/PhanendraSreeharsh" target="_blank" class="contact-card">
+          <img src="./assets/linkedin.png" alt="LinkedIn" class="contact-icon">
+          <div>
+            <p class="contact-type">LinkedIn</p>
+            <p class="contact-value">PhanendraSreeharsh</p>
+          </div>
+        </a>
+        <a href="https://github.com/Sree-harsh" target="_blank" class="contact-card">
+          <img src="./assets/github.png" alt="GitHub" class="contact-icon">
+          <div>
+            <p class="contact-type">GitHub</p>
+            <p class="contact-value">Sree-harsh</p>
+          </div>
+        </a>
+        <a href="tel:+919016670169" class="contact-card">
+          <img src="./assets/email.png" alt="Phone" class="contact-icon">
+          <div>
+            <p class="contact-type">Phone</p>
+            <p class="contact-value">+91 90166 70169</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ FOOTER ══ -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">Sree Harsh</div>
+      <ul class="footer-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#beyond">Beyond</a></li>
+      </ul>
+      <p class="footer-copy">© 2025 Kowdodi Phanendra Sree Harsh</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
