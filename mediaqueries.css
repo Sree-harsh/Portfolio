@@ -4,8 +4,12 @@
   .profile-pic-wrap{width:240px;height:240px}
   .hero-name{font-size:2.7rem}
   .btn-container,#socials-container{justify-content:center}
+  .about-grid-v2{text-align:center}
+  .about-bio{text-align:left}
+  .about-cards{justify-content:center}
   .skills-grid{grid-template-columns:repeat(2,1fr)}
   .projects-grid{grid-template-columns:repeat(2,1fr)}
+  .cv-dropdown{position:relative}
   footer{padding:2rem 2.5rem}
 }
 @media (max-width:720px){
@@ -18,13 +22,18 @@
   .hero-name{font-size:2.1rem}
   .btn-container,#socials-container{justify-content:center}
   .about-cards{flex-direction:column}
+  .about-bio{text-align:center}
   .exp-header{flex-direction:column}
   .exp-header-right{align-items:flex-start;flex-direction:row;gap:.6rem;flex-wrap:wrap}
+  .lead-stats{justify-content:center}
   .skills-grid{grid-template-columns:1fr}
   .projects-grid{grid-template-columns:1fr}
+  .beyond-layout{grid-template-columns:1fr}
+  .beyond-heading{text-align:center}
   .tl-title-row{flex-direction:column;align-items:flex-start;gap:.35rem}
   .contact-cards{grid-template-columns:1fr}
   .contact-card{min-width:unset}
+  .contact-note{text-align:center}
   footer{padding:2rem 1.25rem}
   .footer-inner{flex-direction:column;align-items:center;text-align:center;gap:1rem}
   .footer-links{gap:1.25rem;flex-wrap:wrap;justify-content:center}
@@ -32,5 +41,5 @@
 @media (max-width:420px){
   .hero-name{font-size:1.85rem}
   .profile-pic-wrap{width:170px;height:170px}
-  .project-img{height:145px}
+  .project-img{height:160px}
 }

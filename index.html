@@ -13,21 +13,75 @@
 
   <!-- Desktop Nav -->
   <nav id="desktop-nav">
-    <div class="logo">Sree Harsh</div>
+    <div class="logo"><svg class="logo-icon" viewBox="0 0 36 36" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+  <!-- head -->
+  <rect x="6" y="8" width="24" height="16" rx="6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+  <!-- screen/visor -->
+  <rect x="11" y="12" width="14" height="8" rx="4" fill="none" stroke="#00D4DD" stroke-width="1.2"/>
+  <!-- eyes -->
+  <circle cx="15" cy="16" r="1.5" fill="#FFFFFF"/>
+  <circle cx="21" cy="16" r="1.5" fill="#FFFFFF"/>
+  <!-- antenna left -->
+  <line x1="12" y1="8" x2="10" y2="3" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="10" cy="2.5" r="1.8" fill="#00D4DD"/>
+  <!-- antenna right -->
+  <line x1="24" y1="8" x2="26" y2="3" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="26" cy="2.5" r="1.8" fill="#00D4DD"/>
+  <!-- ear sensors -->
+  <circle cx="3.5" cy="16" r="2.5" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="32.5" cy="16" r="2.5" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- neck -->
+  <rect x="15" y="24" width="6" height="3" rx="1" fill="#00D4DD"/>
+  <!-- body hint -->
+  <path d="M10 28 Q18 32 26 28" stroke="#FFFFFF" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <!-- chest nodes -->
+  <circle cx="14" cy="31" r="1" fill="#00D4DD"/>
+  <circle cx="22" cy="31" r="1" fill="#00D4DD"/>
+  <line x1="14" y1="31" x2="18" y2="33" stroke="#FFFFFF" stroke-width=".6"/>
+  <line x1="22" y1="31" x2="18" y2="33" stroke="#FFFFFF" stroke-width=".6"/>
+  <circle cx="18" cy="33" r="1.2" fill="#00D4DD"/>
+</svg></div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#achievements">Achievements</a></li>
-      <li><a href="#beyond">Beyond</a></li>
+      <li><a href="#beyond">More</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </nav>
 
   <!-- Mobile Nav -->
   <nav id="hamburger-nav">
-    <div class="logo">Sree Harsh</div>
+    <div class="logo"><svg class="logo-icon" viewBox="0 0 36 36" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+  <!-- head -->
+  <rect x="6" y="8" width="24" height="16" rx="6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+  <!-- screen/visor -->
+  <rect x="11" y="12" width="14" height="8" rx="4" fill="none" stroke="#00D4DD" stroke-width="1.2"/>
+  <!-- eyes -->
+  <circle cx="15" cy="16" r="1.5" fill="#FFFFFF"/>
+  <circle cx="21" cy="16" r="1.5" fill="#FFFFFF"/>
+  <!-- antenna left -->
+  <line x1="12" y1="8" x2="10" y2="3" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="10" cy="2.5" r="1.8" fill="#00D4DD"/>
+  <!-- antenna right -->
+  <line x1="24" y1="8" x2="26" y2="3" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="26" cy="2.5" r="1.8" fill="#00D4DD"/>
+  <!-- ear sensors -->
+  <circle cx="3.5" cy="16" r="2.5" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="32.5" cy="16" r="2.5" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- neck -->
+  <rect x="15" y="24" width="6" height="3" rx="1" fill="#00D4DD"/>
+  <!-- body hint -->
+  <path d="M10 28 Q18 32 26 28" stroke="#FFFFFF" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <!-- chest nodes -->
+  <circle cx="14" cy="31" r="1" fill="#00D4DD"/>
+  <circle cx="22" cy="31" r="1" fill="#00D4DD"/>
+  <line x1="14" y1="31" x2="18" y2="33" stroke="#FFFFFF" stroke-width=".6"/>
+  <line x1="22" y1="31" x2="18" y2="33" stroke="#FFFFFF" stroke-width=".6"/>
+  <circle cx="18" cy="33" r="1.2" fill="#00D4DD"/>
+</svg></div>
     <div class="nav-right">
       <div class="hamburger-menu">
         <div class="hamburger-icon" onclick="toggleMenu()">
@@ -55,16 +109,22 @@
       <p class="eyebrow">Hi, I'm</p>
       <h1 class="hero-name">Kowdodi Phanendra<br>Sree Harsh</h1>
       <p class="hero-role">Software Engineer by Day · Roboticist at Heart</p>
-      <p class="hero-tagline">Building intelligent machines that perceive, plan, and act — from lab prototypes to real-world deployments.</p>
+      <p class="hero-tagline">I write software for a living and build robots because I can't help it.</p>
       <div class="btn-container">
-        <button class="btn btn-primary" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+        <div class="cv-dropdown">
+          <button class="btn btn-primary cv-trigger">Download CV ▾</button>
+          <div class="cv-menu">
+            <a href="./assets/Sreeharsh_CV_offcampus_full_Accenture.pdf" target="_blank" class="cv-option">📄 Full Resume</a>
+            <a href="./assets/resume-2page.pdf" target="_blank" class="cv-option">📋 Two-Page Resume</a>
+          </div>
+        </div>
         <button class="btn btn-outline" onclick="location.href='#contact'">Get in Touch</button>
       </div>
       <div id="socials-container">
         <a href="https://github.com/Sree-harsh" target="_blank" aria-label="GitHub">
           <img src="./assets/github.png" alt="GitHub" class="social-icon">
         </a>
-        <a href="https://www.linkedin.com/in/PhanendraSreeharsh" target="_blank" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/sreeee/" target="_blank" aria-label="LinkedIn">
           <img src="./assets/linkedin.png" alt="LinkedIn" class="social-icon">
         </a>
       </div>
@@ -98,10 +158,11 @@
           </div>
         </div>
         <p class="about-bio">
-          I'm a robotics engineer with a passion for building autonomous systems that work in the real world.
-          From designing underwater robots at NIT Rourkela's research lab, to developing outdoor navigation stacks
-          at IIT Bombay's eYantra lab — I've always been driven by building things that move and think.
-          Currently at Accenture, I'm channelling that into AI-powered workflow automation and DevOps.
+          I'm a software engineer at Accenture with a deep-rooted passion for robotics and autonomous systems.
+          From building underwater robots at NIT Rourkela's research lab to developing outdoor navigation stacks
+          at IIT Bombay's eYantra lab — my engineering journey has always been about making machines smarter.
+          Today, I bring that same problem-solving mindset to building AI-powered tools and automating enterprise workflows,
+          while continuing to tinker with robots in my own time.
         </p>
       </div>
     </div>
@@ -397,13 +458,87 @@
 
   <!-- ══ BEYOND WORK ══ -->
   <section id="beyond">
-    <span class="section-label">Beyond the screen</span>
-    <h2 class="section-title">Things I Geek Out On</h2>
-    <ul class="hobby-list">
-      <li><span class="hobby-bullet">▸</span> Can solve <span class="num">8</span> different types of Rubik's cubes — 3×3, Megaminx, Pyraminx and more</li>
-      <li><span class="hobby-bullet">▸</span> Green belt in <span class="num">Taekwondo</span></li>
-      <li><span class="hobby-bullet">▸</span> More to be added soon</li>
-    </ul>
+    <span class="section-label">The full picture</span>
+    <h2 class="section-title">Beyond the Code</h2>
+
+    <div class="beyond-layout">
+
+      <!-- LEFT: Leadership -->
+      <div class="beyond-col">
+        <h3 class="beyond-heading">Leadership &amp; Impact</h3>
+
+        <div class="lead-card lead-card--cyborg">
+          <div class="lead-top">
+            <span class="lead-org">Cyborg — Robotics &amp; Automation Club, NIT Rourkela</span>
+            <span class="lead-tenure">3 yrs 1 mo · Full-time</span>
+          </div>
+          <div class="cyborg-tl">
+            <div class="cyborg-tl-item cyborg-tl-item--active">
+              <div class="cyborg-dot"></div>
+              <div class="cyborg-line"></div>
+              <div class="cyborg-detail">
+                <span class="cyborg-role">President</span>
+                <span class="cyborg-date">May 2024 – May 2025 · 1 yr</span>
+                <p class="cyborg-desc">Led a team of <strong>86</strong> members across autonomous systems, computer vision, and embedded projects. Organized technical competitions and outreach events.</p>
+              </div>
+            </div>
+            <div class="cyborg-tl-item">
+              <div class="cyborg-dot"></div>
+              <div class="cyborg-line"></div>
+              <div class="cyborg-detail">
+                <span class="cyborg-role">Robotics Team Lead</span>
+                <span class="cyborg-date">Apr 2023 – May 2024 · 1 yr 2 mos</span>
+                <p class="cyborg-desc">Led the 25-member software subsystem, delivering key project milestones under tight deadlines.</p>
+              </div>
+            </div>
+            <div class="cyborg-tl-item">
+              <div class="cyborg-dot"></div>
+              <div class="cyborg-detail">
+                <span class="cyborg-role">Robotics Team Member</span>
+                <span class="cyborg-date">May 2022 – May 2023 · 1 yr 1 mo</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="lead-card">
+          <div class="lead-top">
+            <span class="lead-role">Event Manager</span>
+            <span class="lead-org">Death Race · NIT Rourkela Techfest</span>
+          </div>
+          <p class="lead-desc">Organized and managed all rounds of NIT Rourkela's flagship robotics competition — the most sought-after event of the annual techfest.</p>
+          <div class="lead-stats">
+            <div class="lead-stat"><span class="lead-num">100</span><span class="lead-label">Teams</span></div>
+            <div class="lead-stat"><span class="lead-num">3500+</span><span class="lead-label">Attendees</span></div>
+          </div>
+        </div>
+
+        <div class="lead-card">
+          <div class="lead-top">
+            <span class="lead-role">Event Manager</span>
+            <span class="lead-org">Robo Sumo · NIT Rourkela Techfest</span>
+          </div>
+          <p class="lead-desc">Led the execution of Robo Sumo, a major robotics competition at the annual techfest.</p>
+          <div class="lead-stats">
+            <div class="lead-stat"><span class="lead-num">25</span><span class="lead-label">Teams</span></div>
+            <div class="lead-stat"><span class="lead-num">1500+</span><span class="lead-label">Attendees</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: Personal -->
+      <div class="beyond-col">
+        <h3 class="beyond-heading">Fun Facts · Off the Resume</h3>
+
+        <ul class="diff-list">
+          <li>🧩 I can solve <strong>8</strong> different types of Rubik's cubes — from the classic 3×3 to Megaminx, Pyraminx and beyond</li>
+          <li>🥋 I hold a green belt in Taekwondo — discipline and focus that carries into everything I build</li>
+          <li>🗣️ I speak and understand <strong>5+</strong> languages — Telugu (mother tongue), Hindi, English, Marathi, Gujarati, and I understand basic Odia</li>
+          <li class="diff-muted">✨ More to come — always picking up something new</li>
+        </ul>
+      </div>
+
+    </div>
   </section>
 
   <!-- ══ CONTACT ══ -->
@@ -420,11 +555,11 @@
             <p class="contact-value">sree16062003@gmail.com</p>
           </div>
         </a>
-        <a href="https://www.linkedin.com/in/PhanendraSreeharsh" target="_blank" class="contact-card">
+        <a href="https://www.linkedin.com/in/sreeee/" target="_blank" class="contact-card">
           <img src="./assets/linkedin.png" alt="LinkedIn" class="contact-icon">
           <div>
             <p class="contact-type">LinkedIn</p>
-            <p class="contact-value">PhanendraSreeharsh</p>
+            <p class="contact-value">in/sreeee</p>
           </div>
         </a>
         <a href="https://github.com/Sree-harsh" target="_blank" class="contact-card">
@@ -448,16 +583,44 @@
   <!-- ══ FOOTER ══ -->
   <footer>
     <div class="footer-inner">
-      <div class="footer-logo">Sree Harsh</div>
+      <div class="footer-logo"><svg class="logo-icon" viewBox="0 0 36 36" width="30" height="30" xmlns="http://www.w3.org/2000/svg">
+  <!-- head -->
+  <rect x="6" y="8" width="24" height="16" rx="6" fill="none" stroke="#FFFFFF" stroke-width="1.8"/>
+  <!-- screen/visor -->
+  <rect x="11" y="12" width="14" height="8" rx="4" fill="none" stroke="#00D4DD" stroke-width="1.2"/>
+  <!-- eyes -->
+  <circle cx="15" cy="16" r="1.5" fill="#FFFFFF"/>
+  <circle cx="21" cy="16" r="1.5" fill="#FFFFFF"/>
+  <!-- antenna left -->
+  <line x1="12" y1="8" x2="10" y2="3" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="10" cy="2.5" r="1.8" fill="#00D4DD"/>
+  <!-- antenna right -->
+  <line x1="24" y1="8" x2="26" y2="3" stroke="#FFFFFF" stroke-width="1.2" stroke-linecap="round"/>
+  <circle cx="26" cy="2.5" r="1.8" fill="#00D4DD"/>
+  <!-- ear sensors -->
+  <circle cx="3.5" cy="16" r="2.5" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  <circle cx="32.5" cy="16" r="2.5" fill="none" stroke="#FFFFFF" stroke-width="1"/>
+  <!-- neck -->
+  <rect x="15" y="24" width="6" height="3" rx="1" fill="#00D4DD"/>
+  <!-- body hint -->
+  <path d="M10 28 Q18 32 26 28" stroke="#FFFFFF" stroke-width="1.2" fill="none" stroke-linecap="round"/>
+  <!-- chest nodes -->
+  <circle cx="14" cy="31" r="1" fill="#00D4DD"/>
+  <circle cx="22" cy="31" r="1" fill="#00D4DD"/>
+  <line x1="14" y1="31" x2="18" y2="33" stroke="#FFFFFF" stroke-width=".6"/>
+  <line x1="22" y1="31" x2="18" y2="33" stroke="#FFFFFF" stroke-width=".6"/>
+  <circle cx="18" cy="33" r="1.2" fill="#00D4DD"/>
+</svg></div>
       <ul class="footer-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#beyond">Beyond</a></li>
+        <li><a href="#beyond">More</a></li>
       </ul>
       <p class="footer-copy">© 2025 Kowdodi Phanendra Sree Harsh</p>
+      <p class="footer-quirk">Designed by me, coded by Claude, perfected through 50+ prompts — building AI-powered tools is my day job, so I put one to work on my own portfolio.</p>
     </div>
   </footer>
 
