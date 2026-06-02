@@ -8,6 +8,7 @@
   .about-bio{text-align:left}
   .about-cards{justify-content:center}
   .skills-grid{grid-template-columns:repeat(2,1fr)}
+  .cert-grid{grid-template-columns:repeat(2,1fr)}
   .projects-grid{grid-template-columns:repeat(2,1fr)}
   .cv-dropdown{position:relative}
   footer{padding:2rem 2.5rem}
@@ -16,6 +17,7 @@
   #desktop-nav{display:none}
   #hamburger-nav{display:flex}
   section{padding:3.5rem 1.25rem}
+  .section-label,.section-title{text-align:center}
   .section-title{font-size:1.85rem;margin-bottom:2rem}
   #profile{flex-direction:column;gap:2rem;text-align:center;padding:3rem 1.25rem}
   .profile-pic-wrap{width:200px;height:200px}
@@ -27,6 +29,7 @@
   .exp-header-right{align-items:flex-start;flex-direction:row;gap:.6rem;flex-wrap:wrap}
   .lead-stats{justify-content:center}
   .skills-grid{grid-template-columns:1fr}
+  .cert-grid{grid-template-columns:1fr}
   .projects-grid{grid-template-columns:1fr}
   .beyond-layout{grid-template-columns:1fr}
   .beyond-heading{text-align:center}
@@ -35,7 +38,6 @@
   .contact-card{min-width:unset}
   .contact-note{text-align:center}
   footer{padding:2rem 1.25rem}
-  .footer-inner{flex-direction:column;align-items:center;text-align:center;gap:1rem}
   .footer-links{gap:1.25rem;flex-wrap:wrap;justify-content:center}
 }
 @media (max-width:420px){
