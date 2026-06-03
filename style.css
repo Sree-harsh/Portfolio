@@ -291,3 +291,9 @@ footer{border-top:1px solid var(--border);padding:2.5rem 4rem}
 .cert-org{font-size:.82rem;font-weight:600;color:#00D4DD;margin-bottom:.25rem}
 .cert-meta{font-size:.72rem;color:var(--text-muted);margin-bottom:.5rem;letter-spacing:.02em}
 .cert-card .cred-link{margin-top:auto}
+
+/* ── Inline links in experience ── */
+.inline-link{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);transition:color .2s,border-color .2s}
+.inline-link:hover{color:var(--accent2);border-color:var(--accent2)}
+.exp-org-link{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;text-decoration:none;transition:opacity .2s}
+.exp-org-link:hover{opacity:.8}
