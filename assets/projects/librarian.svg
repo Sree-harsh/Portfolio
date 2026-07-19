@@ -86,7 +86,7 @@
       
       <!-- Glow behind target book -->
       <ellipse cx="56" cy="23" rx="20" ry="32" fill="url(#bookGlow)"/>
-      <!-- TARGET BOOK — gold spine -->
+      <!-- TARGET BOOK - gold spine -->
       <rect x="46" width="20" height="46" fill="url(#bookGold)" stroke="#FFD700" stroke-width="1.2"/>
       <rect x="46" width="20" height="46" fill="none" stroke="#FFFFFF" stroke-width=".3" opacity=".5"/>
       <rect x="48" y="6"  width="16" height="1.5" fill="#1A0F0A"/>

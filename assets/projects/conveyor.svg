@@ -39,7 +39,7 @@
     <line x1="60" y1="125" x2="340" y2="125" stroke="#A8F0E0" stroke-width="1" stroke-dasharray="2 2" opacity=".6"/>
   </g>
   
-  <!-- ACTUAL conveyor belt (swayed) — slightly curved, displaced -->
+  <!-- ACTUAL conveyor belt (swayed) - slightly curved, displaced -->
   <path d="M60 105 Q150 95 200 115 T340 110 L340 165 Q250 175 200 165 T60 155 Z" fill="url(#beltGrad)" stroke="#00D4DD" stroke-width="1.2"/>
   <!-- belt direction arrows on surface -->
   <g fill="#C8F8EE" opacity=".5">
